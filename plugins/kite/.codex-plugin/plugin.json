@@ -46,7 +46,7 @@
       "Read the comments on my Kite file and apply them",
       "Make a landing page in Kite using my repo's CSS variables as the design system"
     ],
-    "supportURL": "mailto:hello@kite.new",
+    "supportURL": "https://kite.new/docs",
     "brandColorDark": "#FFFFFF",
     "composerIconDark": "./assets/icon-dark.png",
     "logoDark": "./assets/logo-dark.png"

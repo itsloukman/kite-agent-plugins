@@ -1,6 +1,7 @@
 {
   "mcpServers": {
     "kite": {
+      "type": "http",
       "url": "https://kite.new/api/mcp"
     }
   }

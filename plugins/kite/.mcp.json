@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "kite": {
+      "url": "https://kite.new/api/mcp"
+    }
+  }
+}

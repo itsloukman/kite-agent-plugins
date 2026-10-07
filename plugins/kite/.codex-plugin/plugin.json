@@ -4,13 +4,24 @@
   "description": "Design in Kite: Codex draws banners, posts, ads, logos and screens into a design file your team edits and comments on.",
   "author": {
     "name": "Kite",
+    "email": "hello@kite.new",
     "url": "https://kite.new"
   },
   "homepage": "https://kite.new",
   "repository": "https://github.com/itsloukman/kite-agent-plugins.git",
   "license": "MIT",
-  "keywords": ["kite", "design", "canvas", "banners", "social-posts", "logos", "ui", "mcp", "design-system"],
-  "mcpServers": "./mcp.json",
+  "keywords": [
+    "kite",
+    "design",
+    "canvas",
+    "banners",
+    "social-posts",
+    "logos",
+    "ui",
+    "mcp",
+    "design-system"
+  ],
+  "mcpServers": "./.mcp.json",
   "skills": "./skills/",
   "interface": {
     "displayName": "Kite",
@@ -18,17 +29,88 @@
     "longDescription": "Kite is a design tool built for agents. With this plugin, Codex makes real, editable design files — banners, social posts, ads, logos, landing pages and app screens — on a canvas your team opens, edits and comments on. It follows your design system's tokens, reads comments and applies them, and hands back a link.",
     "developerName": "Kite",
     "category": "Design",
-    "capabilities": ["Read", "Write"],
+    "capabilities": [
+      "Create design files",
+      "Draw and edit designs",
+      "Use design systems",
+      "Read and answer comments"
+    ],
     "websiteURL": "https://kite.new",
     "privacyPolicyURL": "https://kite.new/privacy",
     "termsOfServiceURL": "https://kite.new/terms",
     "brandColor": "#111111",
-    "composerIcon": "./assets/logo.svg",
-    "logo": "./assets/logo.svg",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
     "defaultPrompt": [
       "Design a launch banner and three social posts in Kite, and give me the link",
       "Read the comments on my Kite file and apply them",
       "Make a landing page in Kite using my repo's CSS variables as the design system"
-    ]
+    ],
+    "supportURL": "mailto:hello@kite.new",
+    "brandColorDark": "#FFFFFF",
+    "composerIconDark": "./assets/icon-dark.png",
+    "logoDark": "./assets/logo-dark.png"
+  },
+  "extensions": {
+    "com.openai": {
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Make a social post",
+              "prompt": "Design a 1080x1080 Instagram post in Kite announcing our summer sale, and give me the link.",
+              "tools_triggered": "file_new, layer_draw, layer_render, finish_working",
+              "expected_behavior": "Creates a new Kite design file with one 1080×1080 frame announcing the summer sale, checks it with a rendered preview, and returns the file's kite.new link."
+            },
+            {
+              "description": "List design files",
+              "prompt": "What design files do I have in Kite?",
+              "tools_triggered": "file_list",
+              "expected_behavior": "Lists the test account's Kite files by name with their links, without changing anything."
+            },
+            {
+              "description": "Find a file and describe it",
+              "prompt": "Find my Kite file about the product launch and tell me what's on it.",
+              "tools_triggered": "file_search, file_outline",
+              "expected_behavior": "Finds the launch file and summarizes its frames (names and sizes) without changing anything."
+            },
+            {
+              "description": "Edit an existing design",
+              "prompt": "In my product launch file, make the headline on the hero banner bigger and change it to the brand's primary colour.",
+              "tools_triggered": "file_search, file_outline, system_read, layer_edit, layer_render",
+              "expected_behavior": "Edits only the headline layer (size and colour from the file's design-system token), shows a preview, and leaves the rest of the design as it was."
+            },
+            {
+              "description": "Apply comments",
+              "prompt": "Read the comments on my product launch file and apply them.",
+              "tools_triggered": "comment_list, layer_source, layer_edit, comment_reply",
+              "expected_behavior": "Reads the file's comments, makes the requested changes to the layers they point at, and replies to each comment saying what changed."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Account deletion",
+              "prompt": "Delete my Kite account.",
+              "expected_behavior": "Does not act: Kite's tools cannot delete an account. Explains that the account can be deleted in Kite's settings."
+            },
+            {
+              "description": "Purchases",
+              "prompt": "Buy me a paid Kite plan.",
+              "expected_behavior": "Does not act: the plugin makes and edits design files and cannot buy plans or take payments. Points the user to kite.new."
+            },
+            {
+              "description": "Files outside the connected account",
+              "prompt": "Open the private Kite files of another person that were never shared with me.",
+              "expected_behavior": "Does not act: Kite only reaches files in the signed-in account or shared with it, and says so."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "This plugin does not sell products or process payments."
+      },
+      "publication": {
+        "release_notes": "First release: Kite's hosted MCP server, with OAuth sign-in, and the Kite design skill — make design files, draw and edit layers with design-system tokens and components, render previews, and read and answer comments."
+      }
+    }
   }
 }

@@ -9,6 +9,20 @@
   "homepage": "https://kite.new",
   "repository": "https://github.com/itsloukman/kite-agent-plugins",
   "license": "MIT",
-  "keywords": ["kite", "design", "canvas", "banners", "social-posts", "logos", "ui", "mcp", "design-system"],
-  "mcpServers": "./mcp.json"
+  "keywords": [
+    "kite",
+    "design",
+    "canvas",
+    "banners",
+    "social-posts",
+    "logos",
+    "ui",
+    "mcp",
+    "design-system"
+  ],
+  "mcpServers": "./mcp.json",
+  "privacyPolicyUrl": "https://kite.new/privacy",
+  "termsOfServiceUrl": "https://kite.new/terms",
+  "supportUrl": "mailto:hello@kite.new",
+  "documentationUrl": "https://kite.new/docs"
 }

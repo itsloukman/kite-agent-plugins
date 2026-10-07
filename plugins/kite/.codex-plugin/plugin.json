@@ -25,10 +25,10 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Kite",
-    "shortDescription": "Design files your agent draws and your team edits.",
+    "shortDescription": "Design files your team edits",
     "longDescription": "Kite is a design tool built for agents. With this plugin, Codex makes real, editable design files — banners, social posts, ads, logos, landing pages and app screens — on a canvas your team opens, edits and comments on. It follows your design system's tokens, reads comments and applies them, and hands back a link.",
     "developerName": "Kite",
-    "category": "Design",
+    "category": "Productivity",
     "capabilities": [
       "Create design files",
       "Draw and edit designs",

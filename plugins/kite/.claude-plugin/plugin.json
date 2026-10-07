@@ -1,0 +1,14 @@
+{
+  "name": "kite",
+  "version": "1.0.0",
+  "description": "Design in Kite: Claude draws banners, posts, ads, logos and screens into a design file your team edits and comments on.",
+  "author": {
+    "name": "Kite",
+    "url": "https://kite.new"
+  },
+  "homepage": "https://kite.new",
+  "repository": "https://github.com/itsloukman/kite-agent-plugins",
+  "license": "MIT",
+  "keywords": ["kite", "design", "canvas", "banners", "social-posts", "logos", "ui", "mcp", "design-system"],
+  "mcpServers": "./mcp.json"
+}

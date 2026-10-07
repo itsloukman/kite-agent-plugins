@@ -1,0 +1,20 @@
+{
+  "name": "kite",
+  "interface": {
+    "displayName": "Kite"
+  },
+  "plugins": [
+    {
+      "name": "kite",
+      "source": {
+        "source": "local",
+        "path": "./plugins/kite"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design"
+    }
+  ]
+}

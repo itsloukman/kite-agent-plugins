@@ -1,0 +1,34 @@
+{
+  "name": "kite",
+  "version": "1.0.0",
+  "description": "Design in Kite: Codex draws banners, posts, ads, logos and screens into a design file your team edits and comments on.",
+  "author": {
+    "name": "Kite",
+    "url": "https://kite.new"
+  },
+  "homepage": "https://kite.new",
+  "repository": "https://github.com/itsloukman/kite-agent-plugins.git",
+  "license": "MIT",
+  "keywords": ["kite", "design", "canvas", "banners", "social-posts", "logos", "ui", "mcp", "design-system"],
+  "mcpServers": "./mcp.json",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Kite",
+    "shortDescription": "Design files your agent draws and your team edits.",
+    "longDescription": "Kite is a design tool built for agents. With this plugin, Codex makes real, editable design files — banners, social posts, ads, logos, landing pages and app screens — on a canvas your team opens, edits and comments on. It follows your design system's tokens, reads comments and applies them, and hands back a link.",
+    "developerName": "Kite",
+    "category": "Design",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://kite.new",
+    "privacyPolicyURL": "https://kite.new/privacy",
+    "termsOfServiceURL": "https://kite.new/terms",
+    "brandColor": "#111111",
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg",
+    "defaultPrompt": [
+      "Design a launch banner and three social posts in Kite, and give me the link",
+      "Read the comments on my Kite file and apply them",
+      "Make a landing page in Kite using my repo's CSS variables as the design system"
+    ]
+  }
+}

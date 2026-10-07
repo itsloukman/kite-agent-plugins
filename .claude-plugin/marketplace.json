@@ -1,0 +1,17 @@
+{
+  "name": "kite",
+  "owner": {
+    "name": "Kite"
+  },
+  "metadata": {
+    "description": "Kite for your agent: design files it draws and your team edits.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "kite",
+      "source": "./plugins/kite",
+      "description": "Connect your agent to Kite with its hosted MCP server and the Kite design skill."
+    }
+  ]
+}

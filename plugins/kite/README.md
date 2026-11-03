@@ -9,7 +9,7 @@ Design in [Kite](https://kite.new) from your agent: banners, social posts, ads, 
 
 ## Setup
 
-1. Install the plugin.
+1. Install the plugin. In Claude Code: `/plugin install kite --marketplace itsloukman/kite-agent-plugins`.
 2. Connect the `kite` server. Kite opens in the browser: sign in and click **Allow**.
 3. Ask: "Design a launch banner in Kite and give me the link."
 

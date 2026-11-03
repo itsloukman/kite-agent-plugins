@@ -29,6 +29,10 @@ Then install **Kite** from `/plugins` and sign in when asked.
 
 Any MCP client that supports remote servers with OAuth can use Kite: add `https://kite.new/api/mcp`. Claude, ChatGPT, Grok and Muse take it as a custom connector — see [kite.new/docs](https://kite.new/docs).
 
+## Updates
+
+The Kite skill (`plugins/kite/skills/kite/SKILL.md`) is the guide Kite gives agents at [kite.new/skill.md](https://kite.new/skill.md). It is published here, with a new version, every time kite.new changes it, so `/plugin update` brings the latest one.
+
 ## Privacy
 
 Kite only acts on files in the Kite account you sign in with, and you can disconnect an agent at any time in Kite's settings. See [kite.new/privacy](https://kite.new/privacy) and [kite.new/terms](https://kite.new/terms).

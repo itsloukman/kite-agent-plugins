@@ -31,7 +31,7 @@ Any MCP client that supports remote servers with OAuth can use Kite: add `https:
 
 ## Updates
 
-The Kite skill (`plugins/kite/skills/kite/SKILL.md`) is the guide Kite gives agents at [kite.new/skill.md](https://kite.new/skill.md). It is published here, with a new version, every time kite.new changes it, so `/plugin update` brings the latest one.
+The Kite skill only says when to use Kite and how to start. How to work in Kite comes from Kite's server each time it connects, so it is always the current guide and the plugin doesn't need an update when Kite changes.
 
 ## Privacy
 

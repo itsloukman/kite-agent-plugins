@@ -35,7 +35,7 @@
     "shortDescription": "Agentic UI, UX and product design",
     "longDescription": "Kite is an agentic design tool: people and their agents design in the same file, at the same time. With this plugin, Codex designs real, editable work on a canvas your team opens, edits and comments on: app screens and user flows, landing pages, design systems and components, and banners, social posts, ads and logos. It follows your design system's tokens and components, reads comments and applies them, and hands back a link.",
     "developerName": "Kite",
-    "category": "Productivity",
+    "category": "Design",
     "capabilities": [
       "Design app screens and user flows",
       "Use design systems and components",

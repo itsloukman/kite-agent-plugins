@@ -1,9 +1,11 @@
 {
   "name": "kite",
-  "version": "1.0.2",
+  "displayName": "Kite",
+  "version": "1.0.3",
   "description": "Design in Kite: Claude draws banners, posts, ads, logos and screens into a design file your team edits and comments on.",
   "author": {
     "name": "Kite",
+    "email": "hello@kite.new",
     "url": "https://kite.new"
   },
   "homepage": "https://kite.new",
@@ -23,6 +25,7 @@
   "mcpServers": "./mcp.json",
   "privacyPolicyUrl": "https://kite.new/privacy",
   "termsOfServiceUrl": "https://kite.new/terms",
-  "supportUrl": "mailto:hello@kite.new",
-  "documentationUrl": "https://kite.new/docs"
+  "supportUrl": "https://kite.new/docs",
+  "documentationUrl": "https://kite.new/docs",
+  "icon": "./assets/icon.png"
 }

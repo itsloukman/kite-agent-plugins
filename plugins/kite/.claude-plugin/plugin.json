@@ -1,8 +1,8 @@
 {
   "name": "kite",
   "displayName": "Kite",
-  "version": "1.0.4",
-  "description": "Design in Kite: Claude draws banners, posts, ads, logos and screens into a design file your team edits and comments on.",
+  "version": "1.0.5",
+  "description": "Agentic design in Kite: Claude designs app screens, user flows, landing pages and design systems, plus banners, posts and logos, in a file your team edits and comments on.",
   "author": {
     "name": "Kite",
     "email": "hello@kite.new",
@@ -13,14 +13,21 @@
   "license": "MIT",
   "keywords": [
     "kite",
-    "design",
-    "canvas",
+    "agentic-design",
+    "ui-design",
+    "ux-design",
+    "ax-design",
+    "product-design",
+    "user-flows",
+    "app-screens",
+    "landing-pages",
+    "design-system",
+    "components",
+    "wireframes",
     "banners",
     "social-posts",
     "logos",
-    "ui",
-    "mcp",
-    "design-system"
+    "mcp"
   ],
   "mcpServers": "./mcp.json",
   "privacyPolicyUrl": "https://kite.new/privacy",

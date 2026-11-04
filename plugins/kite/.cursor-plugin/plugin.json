@@ -1,15 +1,32 @@
 {
   "name": "kite",
   "displayName": "Kite",
-  "version": "1.0.4",
-  "description": "Design in Kite: your agent draws banners, posts, ads, logos and screens into a design file your team edits and comments on.",
+  "version": "1.0.5",
+  "description": "Agentic design in Kite: your agent designs app screens, user flows, landing pages and design systems, plus banners, posts and logos, in a file your team edits and comments on.",
   "author": {
     "name": "Kite"
   },
   "homepage": "https://kite.new",
   "repository": "https://github.com/itsloukman/kite-agent-plugins",
   "license": "MIT",
-  "keywords": ["kite", "design", "canvas", "banners", "social-posts", "logos", "ui", "mcp", "design-system"],
+  "keywords": [
+    "kite",
+    "agentic-design",
+    "ui-design",
+    "ux-design",
+    "ax-design",
+    "product-design",
+    "user-flows",
+    "app-screens",
+    "landing-pages",
+    "design-system",
+    "components",
+    "wireframes",
+    "banners",
+    "social-posts",
+    "logos",
+    "mcp"
+  ],
   "logo": "assets/logo.svg",
   "mcpServers": "./mcp.json",
   "skills": "./skills/"

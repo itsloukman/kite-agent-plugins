@@ -4,8 +4,8 @@
     "name": "Kite"
   },
   "metadata": {
-    "description": "Kite for your agent: design files it draws and your team edits.",
-    "version": "1.0.4"
+    "description": "Kite for your agent: agentic UI, UX and product design in files your team edits.",
+    "version": "1.0.5"
   },
   "plugins": [
     {

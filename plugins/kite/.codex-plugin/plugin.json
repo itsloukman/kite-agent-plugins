@@ -37,9 +37,9 @@
     "developerName": "Kite",
     "category": "Productivity",
     "capabilities": [
-      "Create design files",
-      "Draw and edit designs",
-      "Use design systems",
+      "Design app screens and user flows",
+      "Use design systems and components",
+      "Show and edit files in the chat",
       "Read and answer comments"
     ],
     "websiteURL": "https://kite.new",
@@ -49,9 +49,9 @@
     "composerIcon": "./assets/icon.png",
     "logo": "./assets/logo.png",
     "defaultPrompt": [
-      "Design a launch banner and three social posts in Kite, and give me the link",
-      "Read the comments on my Kite file and apply them",
-      "Make a landing page in Kite using my repo's CSS variables as the design system"
+      "Design a three-screen onboarding flow for my app in Kite",
+      "Show my Product launch file here in the chat",
+      "Read the comments on my Kite file and apply them"
     ],
     "supportURL": "https://kite.new/docs",
     "brandColorDark": "#FFFFFF",
@@ -63,6 +63,18 @@
       "review": {
         "test_cases": {
           "positive": [
+            {
+              "description": "Show a file in the chat and edit it there",
+              "prompt": "Show me my Product launch design here in the chat.",
+              "tools_triggered": "file_search, file_open",
+              "expected_behavior": "Shows the Product launch file as a card in the chat: its picture, its name, Open in Kite and Edit here. Edit here opens the Kite editor full screen inside ChatGPT, signed in to the same account, where the design can be edited directly."
+            },
+            {
+              "description": "Design app screens",
+              "prompt": "Design a three-screen onboarding flow for a meditation app in Kite and show it to me here.",
+              "tools_triggered": "file_new, guide_read, layer_draw, layer_render, file_open, finish_working",
+              "expected_behavior": "Creates a new Kite file, draws three phone screens as editable layers (text as text, shapes as frames), checks each with a rendered preview, and shows the file in the chat as a card that opens the editor."
+            },
             {
               "description": "Make a social post",
               "prompt": "Design a 1080x1080 Instagram post in Kite announcing our summer sale, and give me the link.",
@@ -116,7 +128,7 @@
         "commerce_description": "This plugin does not sell products or process payments."
       },
       "publication": {
-        "release_notes": "First release: Kite's hosted MCP server, with OAuth sign-in, and the Kite design skill — make design files, draw and edit layers with design-system tokens and components, render previews, and read and answer comments."
+        "release_notes": "Kite in the chat: a file your agent makes or shows appears as a card with its picture, and Edit here opens the full Kite editor inside ChatGPT. Also 61 tools for agentic UI, UX and product design: pages, versions, components and slots, design systems, icons, web capture and export as HTML, React or Tailwind."
       }
     }
   }

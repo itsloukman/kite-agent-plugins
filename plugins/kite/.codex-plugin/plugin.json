@@ -125,7 +125,8 @@
           ]
         },
         "commerce": false,
-        "commerce_description": "This plugin does not sell products or process payments."
+        "commerce_description": "This plugin does not sell products or process payments.",
+        "demo_recording_url": "https://kite.new/site/directory/kite-chatgpt-walkthrough.mp4"
       },
       "publication": {
         "release_notes": "Kite in the chat: a file your agent makes or shows appears as a card with its picture, and Edit here opens the full Kite editor inside ChatGPT. Also 61 tools for agentic UI, UX and product design: pages, versions, components and slots, design systems, icons, web capture and export as HTML, React or Tailwind."

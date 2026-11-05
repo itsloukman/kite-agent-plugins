@@ -32,10 +32,10 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Kite",
-    "shortDescription": "Agentic UI, UX and product design",
+    "shortDescription": "Agentic UI, UX, product design",
     "longDescription": "Kite is an agentic design tool: people and their agents design in the same file, at the same time. With this plugin, Codex designs real, editable work on a canvas your team opens, edits and comments on: app screens and user flows, landing pages, design systems and components, and banners, social posts, ads and logos. It follows your design system's tokens and components, reads comments and applies them, and hands back a link.",
     "developerName": "Kite",
-    "category": "Design",
+    "category": "Creativity",
     "capabilities": [
       "Design app screens and user flows",
       "Use design systems and components",
@@ -56,7 +56,12 @@
     "supportURL": "https://kite.new/docs",
     "brandColorDark": "#FFFFFF",
     "composerIconDark": "./assets/icon-dark.png",
-    "logoDark": "./assets/logo-dark.png"
+    "logoDark": "./assets/logo-dark.png",
+    "screenshots": [
+      "./assets/screenshots/onboarding.png",
+      "./assets/screenshots/show-file.png",
+      "./assets/screenshots/comments.png"
+    ]
   },
   "extensions": {
     "com.openai": {
@@ -80,18 +85,6 @@
               "prompt": "Design a 1080x1080 Instagram post in Kite announcing our summer sale, and give me the link.",
               "tools_triggered": "file_new, layer_draw, layer_render, finish_working",
               "expected_behavior": "Creates a new Kite design file with one 1080×1080 frame announcing the summer sale, checks it with a rendered preview, and returns the file's kite.new link."
-            },
-            {
-              "description": "List design files",
-              "prompt": "What design files do I have in Kite?",
-              "tools_triggered": "file_list",
-              "expected_behavior": "Lists the test account's Kite files by name with their links, without changing anything."
-            },
-            {
-              "description": "Find a file and describe it",
-              "prompt": "Find my Kite file about the product launch and tell me what's on it.",
-              "tools_triggered": "file_search, file_outline",
-              "expected_behavior": "Finds the launch file and summarizes its frames (names and sizes) without changing anything."
             },
             {
               "description": "Edit an existing design",
